@@ -1,0 +1,8 @@
+<!-- <pre>
+    {{ images | json }}
+</pre> -->
+
+<div *ngFor="let i of images">
+    <h3>{{i.title}}</h3>
+    <img [attr.src]="i.url"/>
+</div>

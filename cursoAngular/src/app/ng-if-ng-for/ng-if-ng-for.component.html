@@ -1,0 +1,7 @@
+<h1 *ngIf="numero === 1">Exibe este conteúdo</h1>
+<input type="text" (input)="numero = $event.target.value" />
+<h1 *ngIf="numero > 5">Exibe o segundo conteúdo</h1>
+
+<div>
+    <h3 *ngFor="let n of numeros">{{ n }}</h3>
+</div>
